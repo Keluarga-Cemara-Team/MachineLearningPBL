@@ -1,0 +1,4 @@
+,Actual,Naive Bayes Gaussian,KNN Manhattan,SVM RBF,Random Forest Gini,Logistic Regression L2
+Low (0),496,496,486,496,490,473
+Moderate (1),303,292,310,300,303,313
+High (2),201,212,204,204,207,214
