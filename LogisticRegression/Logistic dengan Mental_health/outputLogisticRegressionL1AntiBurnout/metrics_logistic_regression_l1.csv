@@ -1,0 +1,2 @@
+Model,Penalty,L1_Ratio,C,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,F1_Score_Weighted,CV_5Fold_Accuracy_Mean,CV_5Fold_F1_Macro_Mean,Training_Time_s,Peak_Memory_MB
+Logistic Regression L1,l1,,0.01,0.989,0.9827,0.9879,0.985,0.989,0.9852,0.9799,0.7031,4.6107
