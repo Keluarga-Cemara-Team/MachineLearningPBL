@@ -1,0 +1,6 @@
+Model,Keluarga,Metrik_Terbaik,Konfigurasi,Status_Data,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,CV_Accuracy_Mean,CV_F1_Macro_Mean,Training_Time_s
+Naive Bayes Gaussian,Naive Bayes,Gaussian,"GaussianNB, var_smoothing=1e-09",LIVE FILE,0.989,0.9827,0.9879,0.985,0.986,0.9809107674778013,0.0156
+SVM RBF,Support Vector Machine,RBF,"SVC, kernel=rbf, C=1.0, gamma=scale",LIVE FILE,0.989,0.9827,0.9879,0.985,0.986,0.9809107674778013,0.3438
+Logistic Regression L1,Logistic Regression,L1,"LogisticRegression, penalty=l1, solver=saga, C=0.01",LIVE FILE,0.989,0.9827,0.9879,0.985,0.98525,0.9799126522382405,0.7344
+KNN Manhattan,K-Nearest Neighbors,Manhattan,"k=5, metric=manhattan, weights=uniform",LIVE FILE,0.898,0.8871,0.8781,0.882,0.8878,0.8721413233841441,0.0156
+Random Forest GINI,Random Forest,GINI,"RandomForestClassifier, criterion=gini, n_estimators=100",LIVE FILE,0.804,0.7857,0.7859,0.7854,0.8092499999999999,0.7925194105906134,1.5938
