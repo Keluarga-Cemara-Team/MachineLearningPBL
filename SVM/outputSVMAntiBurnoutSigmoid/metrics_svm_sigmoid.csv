@@ -1,0 +1,2 @@
+Model,Kernel,C,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,F1_Score_Weighted,CV_5Fold_Accuracy_Mean,CV_5Fold_F1_Macro_Mean,Training_Time_s,Peak_Memory_MB
+SVM Sigmoid,Sigmoid,1.0,0.97,0.9568,0.962,0.959,0.9701,0.9658,0.9534,0.125,2.0089
