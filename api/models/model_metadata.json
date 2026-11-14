@@ -1,0 +1,194 @@
+{
+  "champion_model": "Gaussian Naive Bayes (GaussianNB)",
+  "comparison_source": "PBL_Perbandingan_Model_Terbaik.ipynb",
+  "evaluation_metrics": {
+    "gaussian_nb": {
+      "name": "Gaussian Naive Bayes",
+      "accuracy": 0.989,
+      "f1_score_macro": 0.985,
+      "is_champion": true
+    },
+    "logistic_regression_l1": {
+      "name": "Logistic Regression L1 (Lasso)",
+      "accuracy": 0.981,
+      "f1_score_macro": 0.9738,
+      "is_champion": false
+    },
+    "random_forest_gini": {
+      "name": "Random Forest (GINI)",
+      "accuracy": 0.989,
+      "f1_score_macro": 0.985,
+      "is_champion": false
+    }
+  },
+  "feature_columns": [
+    "Age",
+    "Monthly_Income_USD",
+    "Work_Hours_Per_Week",
+    "Job_Satisfaction",
+    "Work_Life_Balance",
+    "Sleep_Hours",
+    "Anxiety_Score",
+    "Depression_Score",
+    "Mood_Score",
+    "Emotional_Stability",
+    "Physical_Activity_Hours",
+    "Meditation_Minutes",
+    "Screen_Time_Hours",
+    "Social_Media_Hours",
+    "Gaming_Hours",
+    "Coffee_Cups_Per_Day",
+    "Life_Satisfaction",
+    "Productivity_Score",
+    "Absenteeism_Days",
+    "Remote_Work",
+    "Sleep_Quality",
+    "Stress_Level",
+    "Exercise_Frequency",
+    "Alcohol_Consumption",
+    "Smoking",
+    "Healthy_Diet",
+    "Chronic_Stress",
+    "Family_History_Mental_Illness",
+    "Therapy_Attendance",
+    "Support_System",
+    "Mental_Health_Status"
+  ],
+  "numeric_columns": [
+    "Age",
+    "Monthly_Income_USD",
+    "Work_Hours_Per_Week",
+    "Job_Satisfaction",
+    "Work_Life_Balance",
+    "Sleep_Hours",
+    "Anxiety_Score",
+    "Depression_Score",
+    "Mood_Score",
+    "Emotional_Stability",
+    "Physical_Activity_Hours",
+    "Meditation_Minutes",
+    "Screen_Time_Hours",
+    "Social_Media_Hours",
+    "Gaming_Hours",
+    "Coffee_Cups_Per_Day",
+    "Life_Satisfaction",
+    "Productivity_Score",
+    "Absenteeism_Days"
+  ],
+  "categorical_columns": [
+    "Remote_Work",
+    "Sleep_Quality",
+    "Stress_Level",
+    "Exercise_Frequency",
+    "Alcohol_Consumption",
+    "Smoking",
+    "Healthy_Diet",
+    "Chronic_Stress",
+    "Family_History_Mental_Illness",
+    "Therapy_Attendance",
+    "Support_System",
+    "Mental_Health_Status"
+  ],
+  "encoding_maps": {
+    "Remote_Work": {
+      "No": 0,
+      "Hybrid": 1,
+      "Yes": 2
+    },
+    "Sleep_Quality": {
+      "Excellent": 0,
+      "Good": 1,
+      "Average": 2,
+      "Poor": 3
+    },
+    "Stress_Level": {
+      "Low": 0,
+      "Moderate": 1,
+      "High": 2
+    },
+    "Exercise_Frequency": {
+      "Daily": 0,
+      "Weekly": 1,
+      "Rarely": 2,
+      "Never": 3
+    },
+    "Alcohol_Consumption": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Smoking": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Healthy_Diet": {
+      "No": 1,
+      "Yes": 0
+    },
+    "Chronic_Stress": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Family_History_Mental_Illness": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Therapy_Attendance": {
+      "No": 1,
+      "Yes": 0
+    },
+    "Support_System": {
+      "Poor": 3,
+      "Average": 2,
+      "Good": 1,
+      "Excellent": 0
+    },
+    "Mental_Health_Status": {
+      "Healthy": 0,
+      "Needs Attention": 1,
+      "Critical": 2
+    }
+  },
+  "target_mapping": {
+    "Low": 0,
+    "Moderate": 1,
+    "High": 2
+  },
+  "inv_target_mapping": {
+    "0": "Low",
+    "1": "Moderate",
+    "2": "High"
+  },
+  "mean_imputation": {
+    "Age": 41.68443282381335,
+    "Monthly_Income_USD": 6282.846197183098,
+    "Work_Hours_Per_Week": 45.0328,
+    "Job_Satisfaction": 5.601047753374975,
+    "Work_Life_Balance": 5.520040485829959,
+    "Sleep_Hours": 6.95676500508647,
+    "Anxiety_Score": 40.857520325203254,
+    "Depression_Score": 41.03673635072052,
+    "Mood_Score": 59.20737421063353,
+    "Emotional_Stability": 59.003,
+    "Physical_Activity_Hours": 5.052836734693878,
+    "Meditation_Minutes": 29.92578925789258,
+    "Screen_Time_Hours": 7.989727420667209,
+    "Social_Media_Hours": 3.947792628594572,
+    "Gaming_Hours": 2.912350436017035,
+    "Coffee_Cups_Per_Day": 3.9736,
+    "Life_Satisfaction": 5.613807106598985,
+    "Productivity_Score": 59.05528455284553,
+    "Absenteeism_Days": 14.8508,
+    "Remote_Work": 1.0102,
+    "Sleep_Quality": 1.498,
+    "Stress_Level": 0.7248,
+    "Exercise_Frequency": 1.5324,
+    "Alcohol_Consumption": 0.4844,
+    "Smoking": 0.4948,
+    "Healthy_Diet": 0.509,
+    "Chronic_Stress": 0.1402,
+    "Family_History_Mental_Illness": 0.4866,
+    "Therapy_Attendance": 0.4950574944522897,
+    "Support_System": 1.4942,
+    "Mental_Health_Status": 0.7192
+  }
+}
