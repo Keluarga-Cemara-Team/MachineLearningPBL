@@ -1,2 +1,2 @@
-Model,Penalty,L1_Ratio,C,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,F1_Score_Weighted,CV_5Fold_Accuracy_Mean,CV_5Fold_F1_Macro_Mean,Training_Time_s,Peak_Memory_MB
-Logistic Regression L2,l2,,0.1,0.989,0.9827,0.9879,0.985,0.989,0.985,0.9796,0.7031,29.0999
+Model,Feature_Count,Excluded_Feature,Penalty,L1_Ratio,C,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,F1_Score_Weighted,CV_5Fold_Accuracy_Mean,CV_5Fold_F1_Macro_Mean,Training_Time_s,Peak_Memory_MB
+Logistic Regression L2,30,Mental_Health_Status,l2,,0.1,0.8167,0.8005,0.7965,0.7982,0.8178,0.8143,0.795,56.4391,40.5295
