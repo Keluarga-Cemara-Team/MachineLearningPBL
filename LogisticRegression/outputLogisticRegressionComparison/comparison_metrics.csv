@@ -1,4 +1,4 @@
-Model,Penalty,L1_Ratio,C,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,F1_Score_Weighted,CV_5Fold_Accuracy_Mean,CV_5Fold_F1_Macro_Mean,Training_Time_s,Peak_Memory_MB,Regularization
-Logistic Regression L1,l1,,0.01,0.989,0.9827,0.9879,0.985,0.989,0.9852,0.9799,0.7031,4.6107,L1
-Logistic Regression L2,l2,,0.1,0.989,0.9827,0.9879,0.985,0.989,0.985,0.9796,0.7031,29.0999,L2
-Logistic Regression Elastic Net,elasticnet,0.75,0.01,0.989,0.9827,0.9879,0.985,0.989,0.9852,0.9799,1.3594,4.734,Elastic Net
+Model,Feature_Count,Excluded_Feature,Penalty,L1_Ratio,C,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,F1_Score_Weighted,CV_5Fold_Accuracy_Mean,CV_5Fold_F1_Macro_Mean,Training_Time_s,Peak_Memory_MB,Regularization
+Logistic Regression L1,30,Mental_Health_Status,l1,,0.01,0.816,0.8005,0.795,0.7974,0.8172,0.815,0.7961,96.9798,40.5254,L1
+Logistic Regression L2,30,Mental_Health_Status,l2,,0.1,0.8167,0.8005,0.7965,0.7982,0.8178,0.8143,0.795,56.4391,40.5295,L2
+Logistic Regression Elastic Net,30,Mental_Health_Status,elasticnet,0.75,0.01,0.8163,0.8008,0.7955,0.7976,0.8177,0.8147,0.7959,214.2773,40.6447,Elastic Net
