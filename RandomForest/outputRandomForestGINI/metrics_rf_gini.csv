@@ -1,0 +1,2 @@
+Model,Criterion,N_Estimators,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,F1_Score_Weighted,CV_5Fold_Accuracy_Mean,CV_5Fold_F1_Macro_Mean,Training_Time_s,Peak_Memory_MB
+Random Forest GINI,gini,100,0.8145,0.7993,0.7939,0.7959,0.8164,0.8124,0.7936,5.8856,39.5134

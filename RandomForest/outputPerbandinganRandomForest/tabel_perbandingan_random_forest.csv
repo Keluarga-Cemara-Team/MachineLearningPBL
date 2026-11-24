@@ -1,4 +1,4 @@
 Model,Criterion,CV_Accuracy_Mean,CV_F1_Macro_Mean,Test_Accuracy,Test_Precision_Macro,Test_Recall_Macro,Test_F1_Macro,Test_F1_Weighted,Training_Time_s,Peak_Memory_MB
-Random Forest GINI,gini,0.8092,0.7925,0.804,0.7857,0.7859,0.7854,0.8061,1.9219,4.2937
-Random Forest ENTROPY,entropy,0.808,0.7916,0.803,0.7888,0.7866,0.787,0.8055,1.8906,4.0796
-Random Forest LOG LOSS,log_loss,0.808,0.7916,0.803,0.7888,0.7866,0.787,0.8055,1.9844,3.9456
+Random Forest GINI,gini,0.8116,0.7929,0.8145,0.7993,0.7939,0.7959,0.8164,1.1285,43.3297
+Random Forest ENTROPY,entropy,0.8112,0.7922,0.8125,0.7985,0.7914,0.794,0.8145,1.2364,44.3952
+Random Forest LOG LOSS,log_loss,0.8112,0.7922,0.8125,0.7985,0.7914,0.794,0.8145,1.1785,42.5696

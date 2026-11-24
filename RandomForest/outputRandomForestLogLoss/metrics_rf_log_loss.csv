@@ -1,0 +1,2 @@
+Model,Criterion,N_Estimators,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,F1_Score_Weighted,CV_5Fold_Accuracy_Mean,CV_5Fold_F1_Macro_Mean,Training_Time_s,Peak_Memory_MB
+Random Forest LOG LOSS,log_loss,100,0.8125,0.7985,0.7914,0.794,0.8145,0.8125,0.794,1.1345,41.525
