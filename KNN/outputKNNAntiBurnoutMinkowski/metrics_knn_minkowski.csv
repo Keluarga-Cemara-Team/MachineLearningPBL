@@ -1,0 +1,2 @@
+Model,Distance_Metric,K_Neighbors,Weights,Accuracy,Precision_Macro,Recall_Macro,F1_Score_Macro,Precision_Weighted,Recall_Weighted,F1_Score_Weighted,CV_5Fold_Accuracy_Mean,CV_5Fold_F1_Macro_Mean,Training_Time_s,Prediction_Time_s,Peak_Memory_MB
+KNN Minkowski,Minkowski,5,uniform,0.7682,0.7662,0.7348,0.7471,0.7735,0.7682,0.7687,0.7689,0.7464,0.0469,849.2969,11.0386
