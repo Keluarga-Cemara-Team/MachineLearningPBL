@@ -4,7 +4,7 @@ cd /d "%~dp0"
 
 echo ======================================================================
 echo    Memulai AntiBurnout Machine Learning Microservice API
-echo    Model Champion: Gaussian Naive Bayes (Akurasi: 98.90%%)
+echo    Model Champion: Logistic Regression L2 (Akurasi: 81.67%% - 50k Data)
 echo ======================================================================
 
 set PYTHON_CMD=python
