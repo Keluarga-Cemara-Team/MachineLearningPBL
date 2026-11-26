@@ -1,26 +1,84 @@
 {
-  "champion_model": "Gaussian Naive Bayes (GaussianNB)",
+  "champion_model": "Logistic Regression L2 (Ridge, C=0.1)",
   "comparison_source": "PBL_Perbandingan_Model_Terbaik.ipynb",
+  "dataset_info": {
+    "total_rows": 50000,
+    "train_rows": 40000,
+    "test_rows": 10000,
+    "total_features": 30,
+    "excluded_leakage_columns": [
+      "Mental_Health_Status",
+      "Burnout_Score",
+      "AI_Wellness_Recommendation"
+    ],
+    "preprocessing_leakage_free": true
+  },
   "evaluation_metrics": {
-    "gaussian_nb": {
-      "name": "Gaussian Naive Bayes",
-      "accuracy": 0.989,
-      "f1_score_macro": 0.985,
+    "logistic_regression_l2": {
+      "name": "Logistic Regression L2 (Ridge)",
+      "accuracy": 0.817,
+      "precision_macro": 0.8008,
+      "recall_macro": 0.7969,
+      "f1_score_macro": 0.7986,
+      "scaler": "StandardScaler",
       "is_champion": true
-    },
-    "logistic_regression_l1": {
-      "name": "Logistic Regression L1 (Lasso)",
-      "accuracy": 0.981,
-      "f1_score_macro": 0.9738,
-      "is_champion": false
     },
     "random_forest_gini": {
       "name": "Random Forest (GINI)",
-      "accuracy": 0.989,
-      "f1_score_macro": 0.985,
+      "accuracy": 0.8145,
+      "precision_macro": 0.7993,
+      "recall_macro": 0.7939,
+      "f1_score_macro": 0.7959,
+      "scaler": "StandardScaler",
+      "is_champion": false
+    },
+    "naive_bayes_multinomial": {
+      "name": "Multinomial Naive Bayes (MultinomialNB)",
+      "accuracy": 0.8063,
+      "precision_macro": 0.8167,
+      "recall_macro": 0.7702,
+      "f1_score_macro": 0.7826,
+      "scaler": "MinMaxScaler",
       "is_champion": false
     }
   },
+  "grand_comparison_50k": [
+    {
+      "rank": 1,
+      "model": "Logistic Regression L2",
+      "accuracy": 0.8167,
+      "f1_score_macro": 0.7982,
+      "cv_accuracy": 0.8143
+    },
+    {
+      "rank": 2,
+      "model": "SVM RBF",
+      "accuracy": 0.8136,
+      "f1_score_macro": 0.7964,
+      "cv_accuracy": 0.8112
+    },
+    {
+      "rank": 3,
+      "model": "Random Forest GINI",
+      "accuracy": 0.8145,
+      "f1_score_macro": 0.7959,
+      "cv_accuracy": 0.8124
+    },
+    {
+      "rank": 4,
+      "model": "Naive Bayes Multinomial",
+      "accuracy": 0.8063,
+      "f1_score_macro": 0.7826,
+      "cv_accuracy": 0.805
+    },
+    {
+      "rank": 5,
+      "model": "KNN Manhattan",
+      "accuracy": 0.7831,
+      "f1_score_macro": 0.7628,
+      "cv_accuracy": 0.7851
+    }
+  ],
   "feature_columns": [
     "Age",
     "Monthly_Income_USD",
@@ -51,8 +109,7 @@
     "Chronic_Stress",
     "Family_History_Mental_Illness",
     "Therapy_Attendance",
-    "Support_System",
-    "Mental_Health_Status"
+    "Support_System"
   ],
   "numeric_columns": [
     "Age",
@@ -86,8 +143,7 @@
     "Chronic_Stress",
     "Family_History_Mental_Illness",
     "Therapy_Attendance",
-    "Support_System",
-    "Mental_Health_Status"
+    "Support_System"
   ],
   "encoding_maps": {
     "Remote_Work": {
@@ -141,11 +197,6 @@
       "Average": 2,
       "Good": 1,
       "Excellent": 0
-    },
-    "Mental_Health_Status": {
-      "Healthy": 0,
-      "Needs Attention": 1,
-      "Critical": 2
     }
   },
   "target_mapping": {
@@ -159,36 +210,35 @@
     "2": "High"
   },
   "mean_imputation": {
-    "Age": 41.68443282381335,
-    "Monthly_Income_USD": 6282.846197183098,
-    "Work_Hours_Per_Week": 45.0328,
-    "Job_Satisfaction": 5.601047753374975,
-    "Work_Life_Balance": 5.520040485829959,
-    "Sleep_Hours": 6.95676500508647,
-    "Anxiety_Score": 40.857520325203254,
-    "Depression_Score": 41.03673635072052,
-    "Mood_Score": 59.20737421063353,
-    "Emotional_Stability": 59.003,
-    "Physical_Activity_Hours": 5.052836734693878,
-    "Meditation_Minutes": 29.92578925789258,
-    "Screen_Time_Hours": 7.989727420667209,
-    "Social_Media_Hours": 3.947792628594572,
-    "Gaming_Hours": 2.912350436017035,
-    "Coffee_Cups_Per_Day": 3.9736,
-    "Life_Satisfaction": 5.613807106598985,
-    "Productivity_Score": 59.05528455284553,
-    "Absenteeism_Days": 14.8508,
-    "Remote_Work": 1.0102,
-    "Sleep_Quality": 1.498,
-    "Stress_Level": 0.7248,
-    "Exercise_Frequency": 1.5324,
-    "Alcohol_Consumption": 0.4844,
-    "Smoking": 0.4948,
-    "Healthy_Diet": 0.509,
-    "Chronic_Stress": 0.1402,
-    "Family_History_Mental_Illness": 0.4866,
-    "Therapy_Attendance": 0.4950574944522897,
-    "Support_System": 1.4942,
-    "Mental_Health_Status": 0.7192
+    "Age": 41.462495288352805,
+    "Monthly_Income_USD": 6255.438520578993,
+    "Work_Hours_Per_Week": 44.8922,
+    "Job_Satisfaction": 5.492603624981068,
+    "Work_Life_Balance": 5.501899696048632,
+    "Sleep_Hours": 6.99378424526619,
+    "Anxiety_Score": 40.41804923905587,
+    "Depression_Score": 40.53619316591609,
+    "Mood_Score": 59.653922466422465,
+    "Emotional_Stability": 59.423575,
+    "Physical_Activity_Hours": 4.987423022869554,
+    "Meditation_Minutes": 30.01619142776625,
+    "Screen_Time_Hours": 7.98006154472165,
+    "Social_Media_Hours": 3.984777327935223,
+    "Gaming_Hours": 2.9846239723941945,
+    "Coffee_Cups_Per_Day": 3.993175,
+    "Life_Satisfaction": 5.525525601683954,
+    "Productivity_Score": 59.48001833880951,
+    "Absenteeism_Days": 14.950125,
+    "Remote_Work": 0.9963,
+    "Sleep_Quality": 1.477775,
+    "Stress_Level": 0.708975,
+    "Exercise_Frequency": 1.506825,
+    "Alcohol_Consumption": 0.49545,
+    "Smoking": 0.4987,
+    "Healthy_Diet": 0.502175,
+    "Chronic_Stress": 0.133925,
+    "Family_History_Mental_Illness": 0.496525,
+    "Therapy_Attendance": 0.5037050105857446,
+    "Support_System": 1.50285
   }
 }
